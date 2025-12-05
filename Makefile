@@ -1,11 +1,11 @@
-# 1. Le compilateur à utiliser (g++ ou clang++)
+# 1. Le compilateur à utiliser (g++)
 CXX = g++
 
 # 2. Les options de compilation
-# -std=c++17 : Obligatoire pour utiliser std::filesystem et les fonctionnalités modernes
-# -Wall -Wextra : Affiche tous les avertissements (très utile pour débugger)
+# -std=c++17 : Obligatoire pour utiliser std::filesystem 
+# -Wall -Wextra : Affiche tous les avertissements (pour débugger)
 # -g : Ajoute les informations de débogage (pour utiliser gdb ou valgrind)
-# -fopenmp : ACTIVE LA PARALLÉLISATION (Point Bonus)
+# -fopenmp : Pour la parallélisation
 CXXFLAGS = -std=c++17 -Wall -Wextra -g -fopenmp
 
 # 3. Les bibliothèques SFML à lier + OpenMP pour le linkeur
