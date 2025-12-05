@@ -8,7 +8,7 @@ class Rules {
 public:
     virtual ~Rules() {}
 
-    // Méthode pure virtuelle : calcule l'état suivant d'une cellule
+    // Méthode virtuelle pure : calcule l'état suivant d'une cellule
     virtual CellState* computeNextState(const Cell& cell, int aliveNeighbors) const = 0;
 };
 
