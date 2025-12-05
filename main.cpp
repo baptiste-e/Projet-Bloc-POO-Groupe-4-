@@ -22,9 +22,9 @@ void runUnitTest() {
         Grid expected = loader.load("test_end.txt");
 
         if (game.getGrid().isEqualTo(expected)) {
-            std::cout << "✅ SUCCES : Le resultat correspond a l'attendu !" << std::endl;
+            std::cout << "SUCCES : Le resultat correspond a l'attendu !" << std::endl;
         } else {
-            std::cout << "❌ ECHEC : Le resultat est different." << std::endl;
+            std::cout << "ECHEC : Le resultat est different." << std::endl;
         }
     } catch (const std::exception& e) {
         std::cerr << "Erreur pendant le test : " << e.what() << std::endl;
