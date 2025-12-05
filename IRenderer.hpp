@@ -10,4 +10,4 @@ public:
 };
 
 #endif
-
+// Cette fonction permet le lien (hérédité) entre SFMLRenderer et IRenderer
