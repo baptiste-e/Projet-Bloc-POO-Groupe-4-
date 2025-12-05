@@ -1,14 +1,14 @@
 #ifndef DEADSTATE_HPP
 #define DEADSTATE_HPP
 
-#include "CellState.hpp"
-// On RETIRE #include "AliveState.hpp" pour casser la boucle
+#include "CellState.hpp" //On inclut CellState pour l'hérédité 
 
-class DeadState : public CellState {
+
+class DeadState : public CellState { // Ici on déclare l'hérédité
 public:
     bool isAlive() const override { return false; }
 
-    // Juste la déclaration
+    // On déclare le nouvel état de la cellule, et on déclare des possibles cases voisines vivantes (aliveNeighbors)
     CellState* nextState(int aliveNeighbors) const override;
 };
 
