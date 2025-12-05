@@ -1,7 +1,7 @@
 #ifndef CONSOLERENDERER_HPP
 #define CONSOLERENDERER_HPP
 
-#include "IRenderer.hpp"
+#include "IRenderer.hpp" //Hérédité entre ConsoleRenderer et IRenderer (qui est virtuelle)
 #include <string>
 
 class ConsoleRenderer : public IRenderer {
